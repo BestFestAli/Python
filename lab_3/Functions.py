@@ -27,8 +27,9 @@ def converter(abc):
             num_str += abc[i]
             j += 1
         else:
-            answer.append(int(num_str))
+            answer.append(float(num_str))
             num_str = ""
+    answer.append(float(num_str))
     return answer
 
 def filter_prime(str):
