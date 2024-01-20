@@ -183,7 +183,9 @@ def histogram(nums):
         
 histogram([4, 9, 7])
 print("==============")
+
 # 13 Guess the number
+
 import numpy as np
 print("Before starting our game choose minimal possible number")
 min_n = input()
@@ -193,7 +195,7 @@ my_num = np.random.randint(min_n, max_n, dtype=int)
 print("Hello! What is your name?")
 x = input()
 
-print ("Well, ", x, " , I am thinking of a number between 1 and 20.")
+print ("Well,", x, ", I am thinking of a number between 1 and 20.")
 print("Take a guess.")
 a = input()
 gues_num = 1
