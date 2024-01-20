@@ -195,12 +195,15 @@ my_num = np.random.randint(min_n, max_n, dtype=int)
 print("Hello! What is your name?")
 x = input()
 
-print ("Well,", x, ", I am thinking of a number between 1 and 20.")
+print ("Well,", x, ", I am thinking of a number between", min_n, "and", max_n)
 print("Take a guess.")
 a = input()
 gues_num = 1
-while a != my_num:    
-    print("Your guess is too low.")
+while int(a) != my_num:
+    if int(a)>my_num:
+        print("Your guess is too big.")
+    else:
+        print("Your guess is too low.")
     print("Take a guess.")
     a = input()
     gues_num += 1
