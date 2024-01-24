@@ -3,19 +3,19 @@ def grams_to_ounces(grams):
     return 28.3495231 * grams
 
 print(grams_to_ounces(123))
-
+print("===================")
 # 2. Convert Fahrenheit to centigrade:
 def fahrenheit_to_centigrade(F):
     return (5/9)*(F-32)
 
 print(fahrenheit_to_centigrade(104))
-
+print("===================")
 # 3. Program to solve a classic puzzle:
 def solve(numheads, numlegs):
     return "chickens: ", 2*numheads - numlegs/2, " rabbits: ", numlegs/2-numheads
 
 print(solve(35, 94))
-
+print("===================")
 # 4. Filtering prime numbers:
 import numpy as np
 def converter(abc):
@@ -53,7 +53,7 @@ def filter_prime(str):
     return answer
 
 print(filter_prime("132 7 0 -1.23 5 100 101"))
-
+print("===================")
 # 5. All string permutations
 
 def permut(slovoo, idx):
@@ -74,7 +74,7 @@ def permut(slovoo, idx):
             slovo[i] = a
         
 permut('Ali', 0)
-        
+print("===================")    
 # 6 Return a sentence with the words reversed
 
 def reverse(slovoo):
@@ -100,7 +100,7 @@ def reverse(slovoo):
     return res
 
 print(reverse("Menin atym Ali jane men studentpin"))
-
+print("===================")
 # 7 Array contains 3 3
 
 def has_33(nums):
@@ -115,7 +115,7 @@ def has_33(nums):
 print(has_33([1, 3, 3]) )
 print(has_33([1, 3, 1, 3])) 
 print(has_33([3, 1, 3])) 
-
+print("===================")
 # 8 List contains 0 0 7
 
 def spy_game(nums):
@@ -141,7 +141,7 @@ def sp_vol(radius):
     return 4*radius*radius*radius*np.pi/3
 
 print(sp_vol(4))
-
+print("===================")
 # 10 Unique elements of list
 
 def unique(slovo):
@@ -156,7 +156,7 @@ def unique(slovo):
     return good
     
 print(unique([1, 1, 4, 1, 2, 5, 2, 9, 3, 2, 3, 1, 1, 3, 5]))
-
+print("===================")
 # 11 Checking palindroms
 
 def palindrome(slovoo):
@@ -169,7 +169,7 @@ def palindrome(slovoo):
     return answer
 
 print(palindrome("qaza"))
-
+print("===================")
 # 12 histogram
 
 def histogram(nums):
@@ -182,7 +182,7 @@ def histogram(nums):
         print(word)
         
 histogram([4, 9, 7])
-print("==============")
+print("===================")
 
 # 13 Guess the number
 
