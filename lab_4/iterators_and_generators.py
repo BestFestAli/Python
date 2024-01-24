@@ -1,5 +1,5 @@
 # 1 answer 
-n = input("Enter the n: ") # для первых двух задании
+n = input("Enter the n: ") # для задач 1, 2 и 5 
 answer_1 = []
 for i in range(1, int(n)+1):
     answer_1.append(i*i)
@@ -31,17 +31,25 @@ class algo_3(p_algo):
     def __init__(self, n):
         self.n = n
         self.answer = []
+        self.i = 0
         
     def gen_3_4(self):
         answer = []
         for i in range(int(self.n)+1):
             if i/3 == i//3 or i/4 == i//4:
                 answer.append(i)
-        self.answer = answer    
+        self.answer = answer
+    def next(self):
+        if self.i == len(self.answer):
+            self.i = 0
+        print(self.answer[self.i]) 
+        self.i += 1   
 
-prob_3 = algo_3(100)
+prob_3 = algo_3(25)
 prob_3.gen_3_4()
 prob_3.print_gen()
+for i in range(25):
+    prob_3.next()
 
 print("===================")
 # 4 answer

@@ -1,5 +1,4 @@
 import math as m
-import numpy as np
 
 # 1 answer
 x = float(input("Input degree: "))
