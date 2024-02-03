@@ -82,7 +82,20 @@ Beka.withdraw(1750)
 Beka.show()
 print("===================")
 # 6 answer
-"""import numpy as np
+import numpy as np
 def prime_filter(nums):
-    answer = list(filter(lambda a: bool((a/b)*b != 0) for b in range(np.sqrt(a)+1), nums))
-print(prime_filter([1, 2, 3]))"""
+    mn = 0
+    for i in nums:
+        if i > mn:
+            mn = i
+    primes = [2]
+    for i in range (2, mn+1):
+        c = 0
+        for j in primes:
+            if i % j != 0:
+                c+=1
+        if c == len(primes):
+            primes.append(i)
+    x = lambda a: a in primes
+    return list(filter(x , nums))
+print(prime_filter([1, 2, 3, 4, 5, 6]))
